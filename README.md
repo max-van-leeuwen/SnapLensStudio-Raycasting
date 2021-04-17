@@ -1,6 +1,5 @@
 # SnapLensStudio-Raycasting
-Raycast any mesh and retrieve positional and rotational information.
-
+Raycast any mesh and retrieve positional and rotational information. [From this tweet.](https://twitter.com/maksvanleeuwen/status/1383471889016754180)
 
 
 [twitter @maksvanleeuwen](https://twitter.com/maksvanleeuwen)  
