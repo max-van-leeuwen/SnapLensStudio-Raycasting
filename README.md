@@ -15,7 +15,7 @@ Returns position and rotation to place an object on the mesh where ray intersect
 
 Issues:
  - Mesh UVs are irreversibly overwritten with projected UVs. Duplicate mesh resource if mesh UVs are important.
- - Raycasting needs a 1-frame-delay, which is why it cannot return a value instantly. It uses a callback function instead.
+ - Raycasting needs a delay, which is why it cannot return a value instantly. It uses a callback function instead.
 
 Usage:
 	script.api.raycast(callback, renderMeshVisual, startPos, endPos)
