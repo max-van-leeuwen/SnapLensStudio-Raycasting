@@ -2,7 +2,10 @@
 Raycast any mesh and retrieve positional and rotational information.
 
 
-Max van Leeuwen || tw @maksvanleeuwen || ig @max.van.leeuwen || maxvanleeuwen.com
+Max van Leeuwen
+[twitter @maksvanleeuwen](https://twitter.com/maksvanleeuwen)
+[instagram @max.van.leeuwen](https://instagram.com/max.van.leeuwen)
+[maxvanleeuwen.com](https://maxvanleeuwen.com/)
 
 Raycasting on any mesh, muddy solution.
 Returns position and rotation to place an object on the mesh where ray intersects.
