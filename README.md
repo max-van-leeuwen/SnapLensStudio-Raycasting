@@ -1,5 +1,6 @@
 # SnapLensStudio-Raycasting
-Raycast any mesh and retrieve positional and rotational information. [From this tweet.](https://twitter.com/maksvanleeuwen/status/1383471889016754180)
+Raycast any mesh to get the position and rotation. [From this tweet](https://twitter.com/maksvanleeuwen/status/1383471889016754180). 
+Uses the PinToMesh component in combination with the snap() function to do a hit test on a 3D model.
 
 
 [twitter @maksvanleeuwen](https://twitter.com/maksvanleeuwen)  
