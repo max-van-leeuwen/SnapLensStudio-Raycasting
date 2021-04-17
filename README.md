@@ -20,6 +20,6 @@ Issues:
 Usage:
 	script.api.raycast(callback, renderMeshVisual, startPos, endPos)
 		callback 			: a function with arguments (position [vec3], rotation [quat]) that will be called when raycast is complete
-		renderMeshVisual 	: the mesh to raycast
+		renderMeshVisual 		: the mesh to raycast
 		startPos 			: world position start of ray
 		endPos 				: end position end of ray
