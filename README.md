@@ -2,12 +2,11 @@
 Raycast any mesh to get the position and rotation. [From this tweet](https://twitter.com/maksvanleeuwen/status/1383471889016754180). 
 Uses the PinToMesh component in combination with the snap() function to do a hit test on a 3D model.
 
+<br>
 
-[twitter @maksvanleeuwen](https://twitter.com/maksvanleeuwen)  
-[instagram @max.van.leeuwen](https://instagram.com/max.van.leeuwen)  
-[maxvanleeuwen.com](https://maxvanleeuwen.com/)  
+![Raycasting](https://github.com/max-van-leeuwen/SnapLensStudio-Raycasting/blob/main/media/ray%20casting.gif?raw=true)
 
-
+<br>
 
 ```
 Raycasting on any mesh, muddy solution.
