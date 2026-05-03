@@ -4,7 +4,7 @@ Works with 3D lines (world space / Spectacles) as well as mobile screen-space po
 
 <br>
 
-![Raycasting](https://github.com/max-van-leeuwen/SnapLensStudio-Raycasting/blob/main/Media/Raycast%20Spectacles.gif?raw=true)
+![Raycasting](https://github.com/max-van-leeuwen/SnapLensStudio-Raycasting/blob/main/media/Raycast%20Spectacles.gif?raw=true)
 
 ## Usage
 

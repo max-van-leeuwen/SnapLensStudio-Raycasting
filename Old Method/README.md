@@ -4,7 +4,7 @@ Uses the PinToMesh component in combination with the snap() function to do a hit
 
 <br>
 
-![Raycasting](https://github.com/max-van-leeuwen/SnapLensStudio-Raycasting/blob/main/Media/Old.gif?raw=true)
+![Raycasting](https://github.com/max-van-leeuwen/SnapLensStudio-Raycasting/blob/main/media/Old.gif?raw=true)
 
 <br>
 
