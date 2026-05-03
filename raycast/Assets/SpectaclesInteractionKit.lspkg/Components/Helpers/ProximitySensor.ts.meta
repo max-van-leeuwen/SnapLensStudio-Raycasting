@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/64c9ea40-2dce-5b53-8b2f-865cb2be3914>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 555ba93c-8d1e-4792-88d6-e8d62b57d8f5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 555ba93c-8d1e-4792-88d6-e8d62b57d8f5
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 6165ed54-9fcd-420f-a762-aba6aabc8ab3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/6165ed54-9fcd-420f-a762-aba6aabc8ab3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 847271c3-1ff9-4223-b038-37ac9a15bdd5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    radius: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - radius: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Sensor Configuration</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Configure the spherical detection volume for tracking nearby colliders</span>"}'
+    - '// @input float radius = 1 {"label":"Radius", "hint":"The radius of the spherical sensor in centimeters."}'

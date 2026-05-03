@@ -1,0 +1,95 @@
+- !<AssetImportMetadata/4dd8b1ba-1803-85a0-cd27-2a23aebb7ab2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 2a92f85a-a814-4f5d-bd73-4a2710147d01
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e497ffb3-0001-4bd8-ab08-a8426634f33e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e497ffb3-0001-4bd8-ab08-a8426634f33e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: bf3043ec-18c7-4420-96eb-2b3881a57d27
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    _distance: false
+    _lockedPitch: false
+    _lockedYaw: false
+    _pitchBufferDegrees: false
+    _pitchEasing: false
+    _pitchOffsetDegrees: false
+    _translationBuffer: false
+    _xzEasing: false
+    _xzEnabled: false
+    _yEasing: false
+    _yEnabled: false
+    _yawBufferDegrees: false
+    _yawEasing: false
+    _yawOffsetDegrees: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - _distance: !<float> 50.000000
+      _xzEnabled: true
+      _xzEasing: !<float> 1.000000
+      _yEnabled: true
+      _yEasing: !<float> 1.000000
+      _translationBuffer: !<float> 0.000000
+      _lockedPitch: true
+      _pitchEasing: !<float> 1.000000
+      _pitchOffsetDegrees: !<float> 0.000000
+      _pitchBufferDegrees: !<float> 0.000000
+      _lockedYaw: true
+      _yawEasing: !<float> 1.000000
+      _yawOffsetDegrees: !<float> 0.000000
+      _yawBufferDegrees: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Distance</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">How far the object is positioned from the camera</span>"}'
+    - '// @input float _distance = 50 {"label":"Distance", "hint":"How far away the SceneObject will be from the camera (in cm)."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Head Translation</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Controls how the object responds to physical head movement in space</span>"}'
+    - '// @input bool _xzEnabled = true {"label":"XZ Enabled", "hint":"When enabled, the SceneObject will follow when the user physically moves their head along the XZ-plane (horizontal movement)."}'
+    - '// @input float _xzEasing = 1 {"label":"XZ Easing", "hint":"How fast the SceneObject will follow along the XZ-plane. Use 0.1 for a delayed, smooth follow effect, or 1 for instant following."}'
+    - '// @input bool _yEnabled = true {"label":"Y Enabled", "hint":"When enabled, the SceneObject will follow when the user physically moves their head along the Y-axis (vertical movement)."}'
+    - '// @input float _yEasing = 1 {"label":"Y Easing", "hint":"How fast the SceneObject will follow along the Y-axis. Use 0.1 for a delayed, smooth follow effect, or 1 for instant following."}'
+    - "// @input float _translationBuffer {\"label\":\"Translation Buffer\", \"hint\":\"The magnitude of change (in cm) needed to activate a translation for the object to follow the camera. A small buffer helps prevent 'wobbling' when the user has an unstable head position.\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Pitch Rotation (Up/Down)</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Controls how the object responds when looking up or down</span>"}'
+    - "// @input bool _lockedPitch = true {\"label\":\"Locked Pitch\", \"hint\":\"When enabled, locks the SceneObject's position relative to the pitch-axis, keeping it fixed in place as the user rotates their head up/down.\"}"
+    - '// @input float _pitchEasing = 1 {"label":"Pitch Easing", "hint":"How fast the SceneObject will follow along the pitch-axis. Use 0.1 for a delayed, smooth follow effect, or 1 for instant following."}'
+    - '// @input float _pitchOffsetDegrees {"label":"Pitch Offset Degrees", "hint":"How many degrees of offset from the center point should the SceneObject sit. Positive values place the element below the center."}'
+    - '// @input float _pitchBufferDegrees {"label":"Pitch Buffer Degrees", "hint":"How many degrees of leeway along each direction (up/down) before the object starts to follow."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Yaw Rotation (Left/Right)</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Controls how the object responds when looking left or right</span>"}'
+    - "// @input bool _lockedYaw = true {\"label\":\"Locked Yaw\", \"hint\":\"When enabled, locks the SceneObject's position relative to the yaw-axis, keeping it fixed in place as the user rotates their head left/right.\"}"
+    - '// @input float _yawEasing = 1 {"label":"Yaw Easing", "hint":"How fast the SceneObject will follow along the yaw-axis. Use 0.1 for a delayed, smooth follow effect, or 1 for instant following."}'
+    - '// @input float _yawOffsetDegrees {"label":"Yaw Offset Degrees", "hint":"How many degrees of offset from the center point should the SceneObject sit. Positive values place the element to the left."}'
+    - '// @input float _yawBufferDegrees {"label":"Yaw Buffer Degrees", "hint":"How many degrees of leeway along each direction (left/right) before the object starts to follow."}'

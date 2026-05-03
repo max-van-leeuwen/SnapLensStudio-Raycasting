@@ -1,0 +1,19 @@
+- !<AssetImportMetadata/f7ee55c5-78e7-6ae5-1107-2c5c77b471d2>
+  ImportedAssetIds:
+    Texture: !<reference> 34b12d9b-94f2-489d-99b4-08f41005d4bb
+  ImporterName: FileTextureImporter
+  PrimaryAsset: !<reference> 34b12d9b-94f2-489d-99b4-08f41005d4bb
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<SingleCompressionSettings>
+    CompressorName: Size
+    CompressionSettings: !<TextureCompressionSettings>
+      Level: Medium

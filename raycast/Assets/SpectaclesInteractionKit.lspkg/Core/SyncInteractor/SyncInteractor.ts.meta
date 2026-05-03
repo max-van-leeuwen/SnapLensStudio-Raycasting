@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/d7db1532-0056-7558-9002-dfbbd29b9c71>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3ace9879-8bb2-44fa-a5fe-14e1d5dcc3ef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3ace9879-8bb2-44fa-a5fe-14e1d5dcc3ef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 10333c06-f529-4e72-ba06-66da6702b003
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/10333c06-f529-4e72-ba06-66da6702b003>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: e08ea313-0110-467d-b801-6eb7fc21f419
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    _drawDebug: false
+    indirectDragThreshold: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - indirectDragThreshold: !<float> 3.000000
+      _drawDebug: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Drag Configuration</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Configure drag sensitivity for indirect (raycast) interactions</span>"}'
+    - '// @input float indirectDragThreshold = 10 {"label":"Indirect Drag Threshold", "hint":"Controls the minimum distance (in cm) the hand must move during indirect interaction to be considered a drag. When the distance between the interaction origin position and current position exceeds this threshold, dragging behavior is detected and tracked. Lower values make dragging more sensitive and easier to trigger, while higher values require more deliberate movement before dragging begins."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Debug</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Visual debugging options for development</span>"}'
+    - '// @input bool _drawDebug {"label":"Draw Debug", "hint":"When enabled, draws debug gizmos in the scene to visualize raycasts, colliders, and other interactor geometry. Useful for troubleshooting targeting issues during development."}'

@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/2df286b6-3e6c-49f6-ab58-033a1c1b8df6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fb62012c-68b5-494f-a9d4-d70bb48e6e77
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fb62012c-68b5-494f-a9d4-d70bb48e6e77
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 00d704b9-a669-4652-b2b8-5cc1398e19db
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/00d704b9-a669-4652-b2b8-5cc1398e19db>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 68f943ce-bba5-419c-9a27-f58791e268c2
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    flagLeft: false
+    flagRight: false
+    inputType: false
+    raycastObjects: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - inputType: screenTap
+      flagLeft: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      flagRight: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      raycastObjects: !<reference.RenderMeshVisual[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input string inputType = "screenTap" {"widget":"combobox", "values":[{"label":"screen tap", "value":"screenTap"}, {"label":"hand pinch", "value":"handPinch"}]}'
+    - // @input SceneObject flagLeft
+    - // @input SceneObject flagRight
+    - "// @input Component.RenderMeshVisual[] raycastObjects"

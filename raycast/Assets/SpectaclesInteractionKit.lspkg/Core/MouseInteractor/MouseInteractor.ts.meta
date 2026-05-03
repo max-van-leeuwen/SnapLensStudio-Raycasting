@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/95488a31-34fa-382d-5e8b-42b7f31c824e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fa8d58de-519f-43c1-a79d-1bfa5fdecfb0
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fa8d58de-519f-43c1-a79d-1bfa5fdecfb0
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> a87395f7-1364-45eb-b950-10fed667ddb1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a87395f7-1364-45eb-b950-10fed667ddb1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0392308f-3ad1-4647-831e-e2235707591f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    _drawDebug: false
+    indirectDragThreshold: false
+    mouseTargetingMode: false
+    moveInDepth: false
+    moveInDepthAmount: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - indirectDragThreshold: !<float> 3.000000
+      _drawDebug: false
+      mouseTargetingMode: !<float> 2.000000
+      moveInDepth: false
+      moveInDepthAmount: !<float> 5.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Drag Configuration</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Configure drag sensitivity for indirect (raycast) interactions</span>"}'
+    - '// @input float indirectDragThreshold = 10 {"label":"Indirect Drag Threshold", "hint":"Controls the minimum distance (in cm) the hand must move during indirect interaction to be considered a drag. When the distance between the interaction origin position and current position exceeds this threshold, dragging behavior is detected and tracked. Lower values make dragging more sensitive and easier to trigger, while higher values require more deliberate movement before dragging begins."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Debug</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Visual debugging options for development</span>"}'
+    - '// @input bool _drawDebug {"label":"Draw Debug", "hint":"When enabled, draws debug gizmos in the scene to visualize raycasts, colliders, and other interactor geometry. Useful for troubleshooting targeting issues during development."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Mouse Interactor</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Configuration for testing interactions in Lens Studio preview</span>"}'
+    - '// @input float mouseTargetingMode = 2 {"label":"Mouse Targeting Mode", "hint":"Sets the return value of MouseInteractor.activeTargetingMode for testing purposes. Useful when your code has checks for specific targeting modes (e.g., interactor.activeTargetingMode === TargetingMode.Direct). Allows you to simulate different hand targeting modes with the mouse in the Lens Studio preview.", "widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"All", "value":3}, {"label":"Poke", "value":4}]}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Depth Testing</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Simulate depth movement for testing 3D interactions</span>"}'
+    - '// @input bool moveInDepth {"label":"Move In Depth", "hint":"When enabled, the mouse interactor oscillates back and forth along its ray direction to simulate depth movement. This helps test 3D interactions in z-space that would normally require physical hand movement toward or away from objects."}'
+    - '// @input float moveInDepthAmount = 5 {"label":"Move In Depth Amount", "hint":"Controls the maximum distance (in cm) that the mouse interactor will move back and forth along its ray direction when moveInDepth is enabled. Higher values create larger depth movements, simulating interaction across a wider z-range for testing 3D interactions.", "showIf":"moveInDepth", "showIfValue":true}'

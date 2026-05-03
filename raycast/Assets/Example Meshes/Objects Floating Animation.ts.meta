@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/214e06d3-a96f-420a-b63b-acb90e032876>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 25e7d789-8d01-43ed-aae4-4c664da53fe8
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 25e7d789-8d01-43ed-aae4-4c664da53fe8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3ce35bb8-2ae5-46a5-b0da-8239eaf5ec9f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3ce35bb8-2ae5-46a5-b0da-8239eaf5ec9f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 8b3bab9e-1a03-439e-b69d-bb80beacf7f9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    rotationSpeed: false
+    speed: false
+    strength: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - strength: !<float> 5.000000
+      speed: !<float> 1.000000
+      rotationSpeed: 0.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input float strength = 5
+    - // @input float speed = 1
+    - // @input float rotationSpeed = 0.5

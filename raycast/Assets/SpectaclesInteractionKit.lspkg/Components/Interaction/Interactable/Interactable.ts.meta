@@ -1,0 +1,89 @@
+- !<AssetImportMetadata/8b0089fd-acd8-41d5-da3e-39d38a6f0904>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4dbaada5-89aa-44bf-9ce8-f707888c5484
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4dbaada5-89aa-44bf-9ce8-f707888c5484>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: f5ccc8e2-4e8d-4daa-b65b-e5a48b6e0ee8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    acceptableXDirections: false
+    acceptableYDirections: false
+    acceptableZDirections: false
+    allowMultipleInteractors: false
+    enableInstantDrag: false
+    enablePokeDirectionality: false
+    ignoreInteractionPlane: false
+    isScrollable: true
+    keepHoverOnTrigger: false
+    targetingMode: false
+    targetingVisual: false
+    useFilteredPinch: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - targetingMode: !<float> 3.000000
+      targetingVisual: !<float> 1.000000
+      ignoreInteractionPlane: false
+      keepHoverOnTrigger: false
+      enableInstantDrag: false
+      isScrollable: false
+      allowMultipleInteractors: true
+      enablePokeDirectionality: false
+      acceptableXDirections: !<float> 0.000000
+      acceptableYDirections: !<float> 0.000000
+      acceptableZDirections: !<float> 1.000000
+      useFilteredPinch: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Targeting Mode</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Define how interactors can target and interact with this object</span>"}'
+    - '// @input float targetingMode = 3 {"label":"Targeting Mode", "hint":"Defines how Interactors can target and interact with this Interactable. Options include:\n- Direct: Only allows close pinch interactions where a hand directly touches the Interactable.\n- Indirect: Allows interactions from a distance with raycasting.\n- Direct/Indirect: Supports both direct and indirect interaction methods.\n- Poke: Enables finger poking interactions.\n- All: Supports all targeting modes (Direct, Indirect, and Poke).", "widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"Direct/Indirect", "value":3}, {"label":"Poke", "value":4}, {"label":"All", "value":7}]}'
+    - '// @input float targetingVisual {"label":"Targeting Visual", "hint":"Sets the preferred targeting visual. (Requires the V2 Cursor to be enabled on InteractorCursors).\n\n- None: No visual feedback.\n- Cursor (default): Shows a cursor at the interaction point.\n- Ray: Shows a ray from the interactor to the target.", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Cursor", "value":1}, {"label":"Ray", "value":2}]}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Interaction Behavior</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Configure how this interactable responds to user interactions</span>"}'
+    - "// @input bool ignoreInteractionPlane {\"label\":\"Ignore Interaction Plane\", \"hint\":\"When enabled, this Interactable ignores any parent InteractionPlane and factors into the cursor's position and targetingVisual. Use when the Interactable is parented for organization but not spatially within that plane.\"}"
+    - '// @input bool keepHoverOnTrigger {"label":"Keep Hover On Trigger", "hint":"When enabled, the Interactable exhibits sticky behavior during trigger - the cursor locks on the Interactable and remains in an active visual state even after de-hovering. This is the singular source of truth for feedback, UI, and cursor components."}'
+    - "// @input bool enableInstantDrag {\"label\":\"Enable Instant Drag\", \"hint\":\"Enable this to allow the Interactable to instantly be dragged on trigger rather than obeying the Interactor's drag threshold.\"}"
+    - '// @input bool isScrollable {"label":"Is Scrollable", "hint":"When true, interactions with this element can scroll a parent ScrollView that has content extending beyond its visible bounds."}'
+    - '// @input bool allowMultipleInteractors = true {"label":"Allow Multiple Interactors", "hint":"Determines whether this Interactable can be simultaneously controlled by multiple Interactors. When false, only one Interactor type (e.g., left hand or right hand) can interact at a time. Set to true to enable interactions from multiple sources simultaneously, such as allowing both hands to manipulate the Interactable at once."}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Poke Directionality</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Restrict poke interactions to specific approach directions to prevent accidental triggers</span>"}'
+    - '// @input bool enablePokeDirectionality {"label":"Enable Poke Directionality", "hint":"Enable Poke Directionality to help prevent accidental interactions when users approach from unwanted angles. When enabled, you can specify which directions are valid for poke interactions on each axis."}'
+    - '// @input float acceptableXDirections {"label":"X", "hint":"Controls from which directions a poke interaction can trigger this Interactable along the X-axis:\n- None: Disables X-axis poke detection.\n- Right: Finger must approach from +X direction.\n- Left: Finger must approach from -X direction.\n- All: Accepts both directions.", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Right", "value":1}, {"label":"Left", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+    - '// @input float acceptableYDirections {"label":"Y", "hint":"Controls from which directions a poke interaction can trigger this Interactable along the Y-axis:\n- None: Disables Y-axis poke detection.\n- Top: Finger must approach from +Y direction.\n- Bottom: Finger must approach from -Y direction.\n- All: Accepts both directions.", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Top", "value":1}, {"label":"Bottom", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+    - '// @input float acceptableZDirections = 1 {"label":"Z", "hint":"Controls from which directions a poke interaction can trigger this Interactable along the Z-axis:\n- None: Disables Z-axis poke detection.\n- Front: Finger must approach from +Z direction.\n- Back: Finger must approach from -Z direction.\n- All: Accepts both directions.", "widget":"combobox", "values":[{"label":"None", "value":0}, {"label":"Front", "value":1}, {"label":"Back", "value":2}, {"label":"All", "value":3}], "showIf":"enablePokeDirectionality"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Advanced</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Additional options for fine-tuning interaction behavior</span>"}'
+    - '// @input bool useFilteredPinch {"label":"Use Filtered Pinch", "hint":"Determines if the Interactable should listen to filtered pinch events when targeted by a HandInteractor. Filtered pinch events are more stable when the hand is quickly moving but may add latency in non-moving cases. Most interactions should use raw pinch events by default. Spatial interactions with large hand movement (such as dragging, scrolling) should use filtered pinch events. If an Interactable has a parent Interactable that uses filtered pinch events, this Interactable will also use filtered pinch events."}'

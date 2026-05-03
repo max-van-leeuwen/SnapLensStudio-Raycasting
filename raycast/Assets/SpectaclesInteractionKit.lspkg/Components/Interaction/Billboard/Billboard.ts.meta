@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/c5165554-4d10-6c1c-3a9e-6fad8349c766>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> cc1c0282-7975-43d8-b046-d297c4b12ac6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/cc1c0282-7975-43d8-b046-d297c4b12ac6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 8a40c633-5e6b-4276-8c8f-3c449d549eee
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    _axisBufferDegrees: false
+    _axisEasing: false
+    _xAxisEnabled: false
+    _yAxisEnabled: false
+    _zAxisEnabled: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - _xAxisEnabled: false
+      _yAxisEnabled: true
+      _zAxisEnabled: false
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Axis Configuration</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Select which axes the object rotates around to face the camera</span>"}'
+    - '// @input bool _xAxisEnabled {"label":"X Axis Enabled", "hint":"Enables pitch rotation of the object to face the camera. When enabled, the object rotates around its X-axis to maintain camera orientation."}'
+    - '// @input bool _yAxisEnabled = true {"label":"Y Axis Enabled", "hint":"Enables yaw rotation of the object to face the camera. When enabled, the object rotates around its Y-axis to track camera position."}'
+    - "// @input bool _zAxisEnabled {\"label\":\"Z Axis Enabled\", \"hint\":\"Enables roll rotation of the object to align with camera orientation. When enabled, the object rotates around its Z-axis to match camera's up direction.\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Rotation Behavior</span>"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #94A3B8; font-size: 11px;\">Fine-tune the smoothness and responsiveness of the billboard rotation</span>"}'
+    - '// @input vec3 _axisBufferDegrees = {0,0,0} {"label":"Axis Buffer Degrees", "hint":"Defines a threshold in degrees before rotation is applied for each axis. The object only rotates when the angle between its orientation and the camera exceeds this buffer, preventing small unwanted movements. Larger values create more stable objects that rotate less frequently."}'
+    - '// @input vec3 _axisEasing = {1,1,1} {"label":"Axis Easing", "hint":"Controls how fast the object rotates around each axis to follow camera movement. Configurable per axis (X,Y,Z) where higher values (1.0) create instant following, while lower values (0.1) create a delayed, smoother follow effect."}'

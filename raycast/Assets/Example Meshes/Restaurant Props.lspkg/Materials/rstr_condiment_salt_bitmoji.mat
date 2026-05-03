@@ -1,0 +1,210 @@
+- !<Material/836206a0-a31e-46a5-b3b2-98c36d24d61e>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> a2e31474-3eed-43c4-a8b1-067e9e86500a
+- !<PassInfo/a2e31474-3eed-43c4-a8b1-067e9e86500a>
+  CachedProperties:
+    - Port_Depth_N004:
+        typeIdx: 1
+        value: 1.000000
+    - Port_Dimension_N126:
+        typeIdx: 3
+        value: {x: 1.000000, y: 1.000000}
+    - Port_FinalColor1_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_FinalColor2_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_FinalColor3_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_GSplatPointSize_N004:
+        typeIdx: 1
+        value: 0.000000
+    - Port_GSplatRotation_N004:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    - Port_GSplatScale_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_LODValue_N052:
+        typeIdx: 1
+        value: 0.000000
+    - Port_LODValue_N129:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Normal_N152:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_Normal_N240:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - Port_PrevWorldPosition_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_RayDirection_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_RayOrigin_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_UVCoord_N052:
+        typeIdx: 3
+        value: {x: 0.000000, y: 0.000000}
+    - Port_WorldNormal_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_WorldPosition_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_WorldTangent_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 1.000000}
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    Port_AO_N152:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Center_N122:
+      typeIdx: 3
+      value: {x: 0.500000, y: 0.500000}
+    Port_Center_N126:
+      typeIdx: 3
+      value: {x: 0.500000, y: 0.500000}
+    Port_Emissive_N152:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N060:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N063:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N100:
+      typeIdx: 1
+      value: 1.300000
+    Port_Input0_N102:
+      typeIdx: 5
+      value: {x: 0.500000, y: 0.500000, z: 0.500000, w: 0.000000}
+    Port_Input1_N051:
+      typeIdx: 5
+      value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    Port_Input1_N062:
+      typeIdx: 5
+      value: {x: 0.212500, y: 0.715400, z: 0.072100, w: 0.000000}
+    Port_Input1_N070:
+      typeIdx: 5
+      value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    Port_Input1_N138:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input2_N051:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input2_N070:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Mask_N139:
+      typeIdx: 1
+      value: 1.000000
+    Port_Opacity_N152:
+      typeIdx: 1
+      value: 1.000000
+    Port_SpecularAO_N152:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N27:
+      typeIdx: 9
+      value:
+        id: 4aa60143-d278-4bb2-828b-3b2f7c9611c3
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    Tweak_N27Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Tweak_N47:
+      typeIdx: 1
+      value: 1.000000
+    colorId01:
+      typeIdx: 5
+      value: {x: 0.866667, y: 0.835294, z: 0.764706, w: 1.000000}
+    metallicId01:
+      typeIdx: 1
+      value: 0.000000
+    patternColorId01:
+      typeIdx: 5
+      value: {x: 0.921569, y: 0.886275, z: 0.858824, w: 1.000000}
+    patternOffsetId01:
+      typeIdx: 3
+      value: {x: 0.000000, y: 0.000000}
+    patternOnOffId01:
+      typeIdx: 2
+      value: false
+    patternRotateId01:
+      typeIdx: 1
+      value: 0.000000
+    patternScaleId01:
+      typeIdx: 3
+      value: {x: 0.000000, y: 0.000000}
+    patternTextureId01:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    patternTextureId01Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    pbrOnOffId01:
+      typeIdx: 2
+      value: false
+    pngPatternId01:
+      typeIdx: 2
+      value: true
+    rimExpId01:
+      typeIdx: 1
+      value: 0.400000
+    rimIntId01:
+      typeIdx: 1
+      value: 0.150000
+    rimOnOffId01:
+      typeIdx: 2
+      value: true
+    rougnessId01:
+      typeIdx: 1
+      value: 0.000000
+  Pass: !<reference> 40611d66-30cb-4084-b0d0-b80b514bb229

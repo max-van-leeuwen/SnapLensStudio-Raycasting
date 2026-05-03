@@ -1,0 +1,256 @@
+- !<Material/259df83a-0b0b-464b-bd6e-ae1da3d1b504>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> e56a0953-89fd-421a-b17f-1645ac294868
+- !<PassInfo/e56a0953-89fd-421a-b17f-1645ac294868>
+  CachedProperties:
+    []
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_AO_N152:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_AO_N313:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Center_N122:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Center_N126:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Center_N282:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Center_N286:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Emissive_N152:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Emissive_N313:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_Import_N060:
+      typeIdx: 1
+      value: 0.000000
+    Port_Import_N063:
+      typeIdx: 1
+      value: 0.000000
+    Port_Import_N100:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input0_N102:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input1_N034:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N035:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N038:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N051:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input1_N062:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input1_N070:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input2_N051:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Input2_N070:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Mask_N139:
+      typeIdx: 1
+      value: 0.000000
+    Port_Mask_N302:
+      typeIdx: 1
+      value: 0.000000
+    Port_Opacity_N152:
+      typeIdx: 1
+      value: 0.000000
+    Port_Opacity_N313:
+      typeIdx: 1
+      value: 0.000000
+    Port_SpecularAO_N152:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    Port_SpecularAO_N313:
+      typeIdx: 4
+      value: {x: 1.000000, y: 1.000000, z: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N27:
+      typeIdx: 9
+      value:
+        id: 3c26fb78-8028-43f2-bd79-48e0694630f6
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    Tweak_N27Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Tweak_N47:
+      typeIdx: 1
+      value: 1.000000
+    colorId01:
+      typeIdx: 5
+      value: {x: 0.330037, y: 0.708293, z: 0.766476, w: 1.000000}
+    colorId02:
+      typeIdx: 5
+      value: {x: 0.775555, y: 0.813962, z: 0.903502, w: 1.000000}
+    greyMaskId:
+      typeIdx: 9
+      value:
+        id: 8717eeaf-2683-4172-a41e-ee798feddeac
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    greyMaskIdTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    metallicId01:
+      typeIdx: 1
+      value: 1.000000
+    metallicId02:
+      typeIdx: 1
+      value: 1.000000
+    patternColorId01:
+      typeIdx: 5
+      value: {x: 0.994842, y: 0.989685, z: 1.000000, w: 1.000000}
+    patternColorId02:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    patternOffsetId01:
+      typeIdx: 3
+      value: {x: -1.500000, y: 1.180000}
+    patternOffsetId02:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    patternOnOffId01:
+      typeIdx: 2
+      value: true
+    patternOnOffId02:
+      typeIdx: 2
+      value: false
+    patternRotateId01:
+      typeIdx: 1
+      value: 1.000000
+    patternRotateId02:
+      typeIdx: 1
+      value: 1.000000
+    patternScaleId01:
+      typeIdx: 3
+      value: {x: 4.000000, y: 3.770000}
+    patternScaleId02:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    patternTextureId01:
+      typeIdx: 9
+      value:
+        id: 2ec5a4ba-839e-46c4-841d-f7a086bd490d
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: ClampToBorderColor
+          wrapModeV: ClampToBorderColor
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    patternTextureId01Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    patternTextureId02:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    patternTextureId02Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    pbrOnOffId01:
+      typeIdx: 2
+      value: false
+    pbrOnOffId02:
+      typeIdx: 2
+      value: false
+    pngPatternId01:
+      typeIdx: 2
+      value: true
+    pngPatternId02:
+      typeIdx: 2
+      value: false
+    rimExpId01:
+      typeIdx: 1
+      value: 1.000000
+    rimExpId02:
+      typeIdx: 1
+      value: 1.000000
+    rimIntId01:
+      typeIdx: 1
+      value: 0.300000
+    rimIntId02:
+      typeIdx: 1
+      value: 1.000000
+    rimOnOffId01:
+      typeIdx: 2
+      value: true
+    rimOnOffId02:
+      typeIdx: 2
+      value: false
+    rougnessId01:
+      typeIdx: 1
+      value: 1.000000
+    rougnessId02:
+      typeIdx: 1
+      value: 1.000000
+  Pass: !<reference> db83348f-2830-487a-9660-35130affb747
