@@ -1204,12 +1204,14 @@ more stable and natural. Disable for immediate 1:1 response to hand movements."
   }
 
   private onTriggerUpdate(_eventData: InteractorEvent): void {
+    const currentInteractors = this.getTriggeringInteractorsCached()
+    this.state.triggeringInteractors = currentInteractors
+
     this.notifyCapabilityChanged()
 
     const currentState = this.state.stateMachine.currentState?.name
 
     if (currentState === this.state.states.Active) {
-      const currentInteractors = this.getTriggeringInteractorsCached()
       const hasCapabilities = this.hasActiveCapabilities()
 
       if (currentInteractors.length === 0 || !hasCapabilities) {

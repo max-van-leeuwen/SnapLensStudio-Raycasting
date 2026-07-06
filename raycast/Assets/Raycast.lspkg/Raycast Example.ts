@@ -1,14 +1,12 @@
 // Raycast Examples
-// - Screen Space (tap to draw)
-// - SIK Hand Tracking (both hands)
+// - Screen Space (tap to shoot ray)
+// - SIK Hand Tracking (point index finger to shoot ray, both hands)
 
 
-import { Raycast } from "Raycast"
-import TrackedHand from "SpectaclesInteractionKit.lspkg/Providers/HandInputData/TrackedHand";
-import { SIK } from 'SpectaclesInteractionKit.lspkg/SIK';
+import { Raycast } from "Raycast.lspkg/Raycast"
 
 @component
-export class Drawing extends BaseScriptComponent {
+export class RaycastExample extends BaseScriptComponent {
     
     @input
     @widget(
@@ -30,8 +28,8 @@ export class Drawing extends BaseScriptComponent {
 
     // store
     private raycaster: any
-    private leftHand!: TrackedHand
-    private rightHand!: TrackedHand
+    private leftHand: any
+    private rightHand: any
     private maxRayDistance = 10000
 
     onAwake() {
@@ -48,15 +46,24 @@ export class Drawing extends BaseScriptComponent {
         }else if(this.inputType === "handPinch"){
             this.raycaster = Raycast.instance.Create(this.raycastObjects, true, 1) // give objects, convex meshes, move slightly away from mesh to avoid intersection
 
-            let handInputData = SIK.HandInputData;
-            this.leftHand = handInputData.getHand('left');
-            this.rightHand = handInputData.getHand('right');
+            try {
+                const { SIK } = require('SpectaclesInteractionKit.lspkg/SIK');
+                let handInputData = SIK.HandInputData;
+                this.leftHand = handInputData.getHand('left');
+                this.rightHand = handInputData.getHand('right');
 
-            this.createEvent("UpdateEvent").bind(this.indexFingerLaser.bind(this))
+                this.createEvent("UpdateEvent").bind(this.indexFingerLaser.bind(this))
+            } catch (error) {
+                print("Add SpectaclesInteractionKit to use hand tracking on the Spectacles.");
+            }
         }
     }
 
     indexFingerLaser() {
+        if (!this.leftHand || !this.rightHand) {
+            return;
+        }
+        
         // left hand
         let leftTargetingData = this.leftHand.targetingData;
         if (leftTargetingData && leftTargetingData.intendsToTarget) {

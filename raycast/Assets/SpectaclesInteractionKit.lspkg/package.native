@@ -56,9 +56,9 @@
     code: ""
   VersionMajor: 0
   VersionMinor: 17
-  VersionPatch: 2
+  VersionPatch: 3
   UpdateCheckpoint: 76
-  ExportUid: 9d098e3f-b664-4327-9ae2-90feb3a5550c
+  ExportUid: 1779095d-6554-48cd-9af0-50526ce0bddb
   ComponentUid: 0f7a0bbe-777c-41a5-b979-0b0430f25836
   PackagePolicy: CanBeUnpackedTransparent
   ReadMe: !<reference> 249b3abb-d043-4ec2-8834-e1b41e0f3c6e
@@ -70,9 +70,9 @@
   AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
     Name: SpectaclesInteractionKit
     AssetId: 1aPW5eMfMPeP1615dXiqyN
-    Hash: b2f1cc2d1cec8c21713153f4718173c8
+    Hash: 6b2e4d972af6ee6f55455ba84fb4e548
     Version:
       major: 0
       minor: 17
-      patch: 2
+      patch: 3
       build: 0

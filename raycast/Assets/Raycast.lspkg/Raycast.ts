@@ -39,14 +39,14 @@ class RaycastInstance {
         }
     }
 
-    // Enable or disable debug draw on all objects
+    // debug drawing
     setDebugDraw(enabled: boolean) {
         for(let i = 0; i < this.colliders.length; i++){
             this.colliders[i].debugDrawEnabled = enabled;
         }
     }
 
-    // Destroy this raycaster instance and remove all collider components
+    // destroy raycaster instance
     destroy() {
         for(let i = 0; i < this.colliders.length; i++){
             this.colliders[i].destroy();

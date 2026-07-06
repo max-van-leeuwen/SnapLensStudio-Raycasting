@@ -5,7 +5,7 @@ The Spectacles Interaction Kit (SIK) is a set of tools, components, and assets d
 ## Documentation and API Reference
 
 - **Getting Started**: Learn how to use SIK by following the [Get Started Guide](https://docs.snap.com/spectacles/spectacles-frameworks/spectacles-interaction-kit/get-started).
-- **API Reference**: Explore the full API documentation for SIK [here](https://developers.snap.com/lens-studio/api/lens-scripting/interfaces/Packages_SpectaclesInteractionKit_SIK.SIKAPI.html).
+- **API Reference**: Explore the full API documentation for SIK [here](https://developers.snap.com/lens-studio/api/lens-scripting/variables/Packages_SpectaclesInteractionKit_SIK.SIK).
 
 ## Release Notes
 
